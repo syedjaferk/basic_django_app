@@ -28,4 +28,4 @@ jobs:
       
       - name: Push Docker Image
         run: |
-          docker push -t ${{ secrets.DOCKER_USERNAME }}/basic_django_app:${{github.run_number}}
+          docker push ${{ secrets.DOCKER_USERNAME }}/basic_django_app:${{github.run_number}}
